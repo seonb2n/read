@@ -70,6 +70,7 @@
 ## 밸런서
 - HDFS를 운영하면서 데이터 불균형이 발생하여 밸런싱을 실행해야 하는 경우가 있습니다.
 - 밸런서는 다음과 같이 실행합니다. 상황에 따라 작업 시간이 굉장히 오래걸릴 수도 있습니다.
+  > ```
   > $ hdfs balancer -threshold 5
   > Time Stamp               Iteration#  Bytes Already Moved  Bytes Left To Move  Bytes Being Moved  NameNode
   > Nov 7, 2022 6:50:16 AM            0              4.23 GB            14.96 GB              10 GB  hdfs://hdfs-namenode:8020
@@ -78,3 +79,4 @@
   > The cluster is balanced. Exiting...
   > Nov 7, 2022 7:23:05 AM            3             15.53 GB                 0 B                0 B  hdfs://hdfs-namenode:8020
   > Nov 7, 2022 7:23:05 AM   Balancing took 44.9548 minutes
+  > ```
